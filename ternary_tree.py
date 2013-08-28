@@ -168,7 +168,7 @@ def test_ttree():
     #     ttree.delete(1)
     # Should print empty Tree
     ttree.traverse_inorder()
-    # Lets Test with some random data,
+    # Lets Test with some random data
     for i in range(10000):
         try:
             random_data = []
@@ -179,10 +179,9 @@ def test_ttree():
             for i in range(10):
                 ttree.delete(ttree.root.data)
             if ttree.root:
-                print "Test case Fail"
+                print "Test case failed\n random_data is %s" % str(random_data)
         except AttributeError:
-            print "Test case fail"
-    # Should print empty Tree
+            print "Test case failed\n random_data is %s" % str(random_data)
     print "Big Test case finished"
 if __name__ == '__main__':
     test_ttree()
