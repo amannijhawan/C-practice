@@ -29,7 +29,7 @@ class TTree(object):
         else:
             self.root = None
 
-    def insert(self, data, root=None, parent=None, child=None):
+    def insert(self, data, root=None,):
         if data is None:
             raise Exception
 
